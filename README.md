@@ -2,6 +2,11 @@
 
 > Dê direção ao seu tempo.
 
+> **In English:** Merid is a tasks-and-calendar app built with Expo/React Native and TypeScript, running on Android, iOS and web from one codebase. It keeps *what to do* (a task with an estimated duration and a deadline) separate from *when to do it* (a calendar block).
+> The app talks straight to Supabase/PostgreSQL, so the rules live in the database: row-level security on every table, a composite foreign key that stops a block from pointing at another user's task, and completion timestamps set by a trigger.
+> Day boundaries follow the time zone saved in the user's profile, never the device clock, with tests for daylight saving days.
+> Status: a pilot (v0.1.0). There is no hosted demo. The rest of this README is in Portuguese.
+
 Aplicativo universal (**Android · iOS · Web**) que une **tarefas** e **agenda**,
 mantendo as duas coisas separadas:
 
@@ -121,3 +126,5 @@ wsl -d docker-desktop -e sh -c "hwclock -s"
 | `npm run db:start` / `db:stop` / `db:reset` | Supabase local |
 | `npm run db:status` | URLs e chaves locais |
 | `npm run db:types` | regenera os tipos do banco |
+
+Portfólio: [moulaz.dev](https://moulaz.dev) · [English](https://moulaz.dev/en/)
